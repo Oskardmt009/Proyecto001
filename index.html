@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Hábitos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Dashboard de Hábitos</h1>
+
+<!-- Tarjetas de estadísticas -->
+<div class="stats">
+  <div class="card" id="avg-study">📚 Promedio Estudio: 0 h</div>
+  <div class="card" id="total-exercise">🏋️ Ejercicio total: 0 h</div>
+  <div class="card" id="avg-sleep">😴 Sueño promedio: 0 h</div>
+</div>
+
+<!-- Formulario compacto -->
+<form id="habit-form" class="form-inline">
+  <select id="habit" required>
+    <option value="Estudio">Estudio</option>
+    <option value="Ejercicio">Ejercicio</option>
+    <option value="Sueño">Sueño</option>
+  </select>
+
+  <input type="date" id="fecha" required>
+  <input type="number" id="cantidad" placeholder="Horas" required min="0">
+  <button type="submit">Agregar</button>
+</form>
+
+<!-- Botones de exportación -->
+<div class="buttons">
+  <button id="export-csv">Exportar CSV</button>
+  <button id="export-pdf">Exportar PDF</button>
+  <button id="export-png">Exportar PNG</button>
+</div>
+
+<!-- Gráfico -->
+<canvas id="habitChart"></canvas>
+
+      <div class="export-buttons">
+        <button id="export-csv">📂 Exportar CSV</button>
+        <button id="export-pdf">📄 Exportar PDF</button>
+    </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+<div class="stats">
+  <div class="card" id="avg-study">📚 Promedio Estudio: 0 h</div>
+  <div class="card" id="total-exercise">🏋️ Ejercicio total: 0 h</div>
+  <div class="card" id="avg-sleep">😴 Sueño promedio: 0 h</div>
+</div>
