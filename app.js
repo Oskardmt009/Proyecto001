@@ -215,3 +215,26 @@ function updateChart() {
   // 👉 también actualizar estadísticas
   updateStats();
 }
+
+// ==================== VARIABLES Y DATOS ====================
+// (Este bloque ya lo tienes)
+let habits = [];
+let habitChart;
+
+// ==================== FUNCIONES PRINCIPALES ====================
+// (Estas ya las tienes en tu archivo)
+function addHabit() {
+  // código para agregar hábitos...
+}
+
+function updateChart() {
+  // código para actualizar gráfico...
+}
+
+function calculateAverage(type) {
+  // código para calcular promedio...
+}
+
+function calculateTotal(type) {
+  // código para calcular total...
+}
